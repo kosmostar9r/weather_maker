@@ -20,6 +20,8 @@ class WeatherMaker:
                                           day=int(self.end_date[0]))
         except ValueError:
             print('incorrect date')
+        except TypeError:
+            print('incorrect date')
         self.weather_info = []
 
     def _format_date(self, date):
